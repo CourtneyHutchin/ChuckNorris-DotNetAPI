@@ -45,6 +45,5 @@ namespace ChuckJokeForm
                 CategoryCBox.Items.Add(category);
             }
         }
-
     }
 }
