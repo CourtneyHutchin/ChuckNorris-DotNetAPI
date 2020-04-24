@@ -1,6 +1,6 @@
 ﻿namespace ChuckJokeForm
 {
-    partial class Form1
+    partial class JokeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,11 +30,12 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.JokeLbl = new System.Windows.Forms.Label();
+            this.CategoryCBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(29, 21);
+            this.button1.Location = new System.Drawing.Point(244, 23);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 49);
             this.button1.TabIndex = 0;
@@ -45,21 +46,32 @@
             // JokeLbl
             // 
             this.JokeLbl.AutoSize = true;
-            this.JokeLbl.Location = new System.Drawing.Point(29, 113);
+            this.JokeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JokeLbl.Location = new System.Drawing.Point(40, 129);
             this.JokeLbl.Name = "JokeLbl";
-            this.JokeLbl.Size = new System.Drawing.Size(0, 13);
+            this.JokeLbl.Size = new System.Drawing.Size(0, 16);
             this.JokeLbl.TabIndex = 1;
             this.JokeLbl.UseMnemonic = false;
             // 
-            // Form1
+            // CategoryCBox
+            // 
+            this.CategoryCBox.FormattingEnabled = true;
+            this.CategoryCBox.Location = new System.Drawing.Point(32, 23);
+            this.CategoryCBox.Name = "CategoryCBox";
+            this.CategoryCBox.Size = new System.Drawing.Size(182, 21);
+            this.CategoryCBox.TabIndex = 2;
+            // 
+            // JokeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 224);
+            this.ClientSize = new System.Drawing.Size(1170, 224);
+            this.Controls.Add(this.CategoryCBox);
             this.Controls.Add(this.JokeLbl);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "JokeForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,6 +81,7 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label JokeLbl;
+        private System.Windows.Forms.ComboBox CategoryCBox;
     }
 }
 
