@@ -65,7 +65,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(883, 224);
+            this.ClientSize = new System.Drawing.Size(1170, 224);
             this.Controls.Add(this.CategoryCBox);
             this.Controls.Add(this.JokeLbl);
             this.Controls.Add(this.button1);
